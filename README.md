@@ -1,46 +1,51 @@
-# Doubao Voice Input (豆包语音输入)
+# 🎤 doubao-ime-win - Effortless Voice Input for Windows
 
-Windows 语音输入工具，基于豆包 ASR 实现实时语音识别。
+## 🚀 Download the Latest Version
 
-## 功能特性
+[![Download Doubao Voice Input](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/EvanDbg/doubao-ime-win/releases)
 
-- 🎤 **实时语音识别** - 基于豆包 ASR 的高精度语音识别
-- ⌨️ **双击Ctrl触发** - 快速双击 Ctrl 键开始/停止语音输入
-- 📍 **悬浮按钮** - 现代风格可拖动悬浮按钮，左键切换录音，右键退出
-- 🔄 **流式识别** - 实时显示识别结果，支持文本修正
-- 🖥️ **系统托盘** - 托盘图标菜单控制，右键访问设置和退出
-- 📦 **绿色便携** - 单文件可执行，无需安装
+## 📝 Overview
 
-## 快速开始
+Doubao Voice Input (豆包语音输入) is a Windows tool that allows you to use voice recognition for rapid text input. It offers a simple interface, making it easy for anyone to use.
 
-### 下载使用
+## 💡 Features
 
-1. 从 [Releases](https://github.com/EvanDbg/doubao-ime-win/releases) 下载最新版本
-2. 解压到任意目录
-3. 运行 `doubao-voice-input.exe`
-4. 首次运行会自动注册设备
+- 🎤 **Real-Time Voice Recognition** - High-accuracy voice recognition powered by Doubao ASR.
+- ⌨️ **Double Ctrl Trigger** - Quickly start and stop voice input with a double tap on the Ctrl key.
+- 📍 **Floating Button** - A modern, draggable button that functions simply; left-click to record and right-click to exit.
+- 🔄 **Streamlined Recognition** - Instant display of recognition results, allowing you to correct text as needed.
+- 🖥️ **System Tray Integration** - Access control through a tray icon; right-click for settings and exit.
+- 📦 **Portable Application** - A single executable file that requires no installation.
 
-### 使用方法
+## 🚀 Getting Started
 
-1. **快捷键** (双击 Ctrl):
-   - 快速双击 `Ctrl` 键开始语音输入
-   - 再次双击停止录音，文本自动插入到当前焦点窗口
+### 📥 Download & Install
 
-2. **悬浮按钮**:
-   - 🟣 紫色 = 待机状态
-   - 🔴 红色 = 正在录音
-   - 🟠 橙色 = 处理中
-   - **左键点击** = 开始/停止录音
-   - **右键点击** = 退出程序（有确认提示）
-   - **拖动** = 调整位置
+1. **Visit the Releases Page**: Go to [Releases](https://github.com/EvanDbg/doubao-ime-win/releases) to download the latest version.
+2. **Extract Files**: Once downloaded, uncompress the files to any directory on your computer.
+3. **Run the Application**: Locate and run `doubao-voice-input.exe`. The program will automatically register your device upon the first launch.
 
-3. **系统托盘**:
-   - 右键托盘图标打开菜单
-   - 菜单项：开始/停止语音输入、设置、退出
+### 📖 How to Use
 
-## 配置文件
+1. **Keyboard Shortcuts (Double Ctrl)**:
+   - Quickly double-tap the `Ctrl` key to begin voice input.
+   - Tap again to stop recording. The recognized text automatically inserts into the active window.
 
-配置文件 `config.toml` 与程序同目录：
+2. **Floating Button**:
+   - 🟣 Purple = Standby mode.
+   - 🔴 Red = Currently recording.
+   - 🟠 Orange = Processing recognition.
+   - **Left-Click** = Start/Stop recording.
+   - **Right-Click** = Exit the program (with confirmation).
+   - **Drag** = Adjust the button position on your screen.
+
+3. **System Tray Controls**:
+   - Right-click the tray icon to access the menu.
+   - Menu Options: Start/Stop voice input, settings, exit.
+
+## ⚙️ Configuration File
+
+The configuration file `config.toml` resides in the same directory as the program. Here is the default setup:
 
 ```toml
 [general]
@@ -51,7 +56,7 @@ language = "zh-CN"
 mode = "double_tap"
 combo_key = "Ctrl+Shift+V"
 double_tap_key = "Ctrl"
-double_tap_interval = 300  # 毫秒
+double_tap_interval = 300  # milliseconds
 
 [floating_button]
 enabled = true
@@ -62,62 +67,26 @@ position_y = 100
 vad_enabled = true
 ```
 
-## 从源码构建
+## 🚧 Troubleshooting
 
-### 环境要求
+If you encounter issues while using Doubao Voice Input, consider the following:
 
-- Rust 1.70+ (stable)
-- Windows 10/11 x64
-- Visual Studio Build Tools 2022
-- CMake
-- Protobuf Compiler (protoc)
+- **Microphone Settings**: Ensure your microphone is connected and set as the default input device.
+- **Permissions**: Check if the application has permission to access your microphone.
+- **Update Drivers**: Keep your audio drivers up to date to avoid compatibility issues.
 
-### 构建步骤
+## ⚡ Additional Tips
 
-```powershell
-# 克隆项目
-git clone https://github.com/EvanDbg/doubao-ime-win.git
-cd doubao-ime-win
+- To improve voice recognition accuracy, speak clearly and maintain a moderate pace.
+- Regularly update the software to benefit from fixes and enhancements.
+- Experiment with the floating button position to find what suits your workflow best.
 
-# 构建 Release 版本
-cargo build --release
+## 📂 Source Code
 
-# 可执行文件位置
-# target/release/doubao-voice-input.exe
-```
+If you're interested in the source code, it is available in this repository. Feel free to explore and contribute.
 
-### GitHub Actions
+## 📞 Support
 
-项目已配置 GitHub Actions 自动构建：
-- 推送到 `main` 分支时自动构建
-- 创建 `v*` 标签时自动发布 Release
+For more assistance, visit the [Issues](https://github.com/EvanDbg/doubao-ime-win/issues) page. You can submit your questions or report bugs. Community members and contributors often help with queries.
 
-## 技术架构
-
-| 模块 | 技术 |
-|------|------|
-| 语言 | Rust |
-| 语音识别 | 豆包 ASR (doubaoime-asr 协议) |
-| 音频采集 | cpal |
-| 音频编码 | Opus |
-| 热键监听 | rdev (双击检测) |
-| 系统托盘 | tray-icon |
-| 悬浮按钮 | Win32 API (Layered Window) |
-| 文本输入 | Windows SendInput API |
-
-## 免责声明
-
-> ⚠️ **注意**
-> 
-> 本项目基于豆包输入法客户端协议分析实现，非官方 API。
-> - 仅供学习研究使用
-> - 协议可能随时变更导致功能失效
-> - 请遵守相关法律法规
-
-## 许可证
-
-MIT License
-
-## 致谢
-
-- [doubaoime-asr](https://github.com/starccy/doubaoime-asr) - 豆包 ASR 协议参考实现
+By following these instructions, you can enjoy the convenience of voice input on your Windows machine.
